@@ -1,0 +1,154 @@
+.navbar-container{
+    height: 4rem;
+    background: linear-gradient(134deg, #be8e43 20.33%, #081b95 57.92%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    }
+
+  .logo {
+    text-decoration: none;
+    color: beige;
+    display: flex;
+    padding: 0 40px;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-menu{
+    list-style-type: none;
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    float: left;
+    cursor: pointer;
+  }
+  
+  .nav-item a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+  }  
+  
+  .navigation-menu ul {
+    display: none;
+  }
+
+  .social-logo{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 6%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: none;
+  }
+  
+  
+  .hamburger:hover {
+    background-color: #2642af;
+  }
+  
+  .nav-icon {
+    display: none;
+  }
+  .left-icons-container{
+    height: 3rem;
+    display: flex;
+    float: right;
+    margin:10px 0px;
+  
+  }
+  .icon-container{
+    width: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    display: flex;
+
+  }
+  .cart-logo{
+ width: 40px;
+ height: 40px;
+ margin: auto;
+
+  }
+  
+  @media screen and (max-width: 550px) {
+    .hamburger {
+      display: block;
+    }
+    .nav-icon{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #ffdd40;
+      background-color: rgb(233, 229, 238);
+      font-size: 2.8rem;
+      color: #0b0b09;
+    }
+    .logo {
+      padding: 0;
+    }
+ 
+    .nav-menu{
+      display: none;
+    }
+    .navigation-menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: -webkit-fill-available;
+      background-color: #f5f7f5;
+      border-top: 1px solid black;
+      display: none;
+      height: fit-content;
+      padding: 10px;
+      border: 1px solid grey;
+      
+    }
+  
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .navigation-menu li a {
+      color: black;
+      padding: 1.5rem 0;
+      text-decoration: none;
+    }
+  
+    .navigation-menu li:hover {
+      background-color: rgb(204, 204, 211);
+  
+    }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+      list-style: none;
+      padding: 20px;
+    }
+  }

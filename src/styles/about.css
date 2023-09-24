@@ -1,0 +1,16 @@
+.about-para{
+    color: #000000;
+    padding: 0 80px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.footer{
+    padding: 50px 0 10px 0 ;
+}
+
+@media screen and (max-width: 550px) {
+    .about-para{
+        padding: 0 40px;
+    }
+}

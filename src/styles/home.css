@@ -1,0 +1,128 @@
+.home-container{
+    height: 100%;
+    padding-bottom: 20px;
+}
+.bg_img{
+    width: 100%;
+    height: 500px;
+    background: transparent;
+    background: rgba(0,0,0,0.1);
+
+}
+h2{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bg_subtitle{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    line-height: 40px;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+}
+.testimonial{
+    padding: 10px 30px;
+}
+.testimonial-card{
+    width: fit-content;
+    height: 12rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #b1aaaa;
+    display: inline-grid;
+    margin: 10px 20px;
+}
+.ts-card-img-top{
+    width: 12.5rem;
+    height: 10rem;
+    border-radius: 10px;
+    background: white;
+}
+.ts-card-title{
+    margin: auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+.filtering_buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.f-title{
+    color: black;
+    border: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    display: flow;
+    padding: 5px 10px;
+}
+
+.filtering_buttons :hover{
+    background: blue;
+    color: white;
+}
+.card-img-top{
+padding: 10px;
+width: 250px;
+height: 250px;
+}
+.card{
+    border: 2px solid;
+    width: 18rem;
+    height: fit-content;
+}
+.img-cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.card-body{
+    text-align: left;
+    padding: 5px 32px;
+
+}
+.list-group list-group-flush{
+    padding: 0;
+    margin: 5px;
+}
+.list-group-item{
+    text-align: left;
+    list-style: none;
+  
+}
+.card-link{
+    border: 2px solid;
+    background: black;
+    color: white;
+    padding: 2px 10px;
+    text-decoration: none;
+
+}
+
+.card-title{
+    padding: 0;
+    margin: 0;
+}
+.card-text{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 550px) {
+    .img-cards{
+        display: block;
+    }
+    .card{
+        width: auto;
+    }
+}
