@@ -6,17 +6,17 @@ import About from './components/about';
 import Products from './components/products';
 import Contact from "./components/contact";
 import Signin from "./components/signin";
+import React, { useState } from "react";
+import Womens from './components/womens';
+import Mens from './components/mens';
+import Kids from './components/kids';
+import Jewellary from './components/jewellary';
 
 function App() {
   return (
-    // <div className="App">
-
-    //   <Navbar/>
-    //   <Home />
-    //   <About />
-    // </div>
 
   <div className="App">
+   
       <Router>
         <Navbar />
         <Switch>
@@ -35,7 +35,17 @@ function App() {
           <Route
             exact path="/"
             component={Products} />
+
           <Route path="/products" component={Products} />
+          <Route path="/mens" component={Mens} />
+          <Route path="/womens" component={Womens} />
+          <Route path="/kids" component={Kids} />
+          <Route path="/jewellary" component={Jewellary} />
+
+
+          
+
+
 
           <Route
             exact path="/"
