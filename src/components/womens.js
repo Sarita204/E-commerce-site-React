@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../images/img1.png";
+import git from "../images/github-logo.png"
 import "../styles/home.css";
 import back from "../images/back.png";
 import img6 from "../images/img6.jpg"
@@ -38,34 +38,34 @@ function Womens() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img20} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img7} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -75,39 +75,39 @@ function Womens() {
                 <div className="card">
                     <img src={img19} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img8} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img18} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -117,39 +117,39 @@ function Womens() {
                 <div className="card">
                     <img src={img9} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img17} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img16} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -159,39 +159,39 @@ function Womens() {
                 <div className="card">
                     <img src={img15} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img10} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img11} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -201,41 +201,47 @@ function Womens() {
                 <div className="card">
                     <img src={img12} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img13} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img src={img14} alt="Card image cap" className="card-img-top" />
                     <div className="card-body">
-                    <p className="card-title">Womens Cloths</p>
+                        <p className="card-title">Womens Cloths</p>
                         <p className="card-text">$ 99.99</p>
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
+            </div>
+            <div className="footer">
+                <div>Made with ❤️ by <a>Sarita</a></div>
+                <a href="https://github.com/Sarita204/E-commerce-site-React">
+                    <img src={git} className="social-logo" />
+                </a>
             </div>
         </div>
     );

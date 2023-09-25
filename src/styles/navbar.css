@@ -1,9 +1,10 @@
 .navbar-container{
     height: 4rem;
-    background: linear-gradient(134deg, #be8e43 20.33%, #081b95 57.92%);
+    /* background: linear-gradient(134deg, #be8e43 20.33%, #081b95 57.92%); */
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
+    background: linear-gradient(134deg, #ffff 18.33%, #081b95 50.92%);
     }
 
   .logo {

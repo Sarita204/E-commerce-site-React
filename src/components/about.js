@@ -17,35 +17,31 @@ function About() {
             <div>
                 <div className="testimonial">
                     <h1 style={{ textDecoration: "underline" }}>Our Products</h1>
-                    <div class="testimonial-card">
+                    <div className="testimonial-card">
                         <img src={mens} className="ts-card-img-top" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="ts-card-title">Men's Cloths</h5>
-                            {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                        <div className="card-body">
+                            <h5 className="ts-card-title">Men's Cloths</h5>
                         </div>
                     </div>
 
-                    <div class="testimonial-card">
+                    <div className="testimonial-card">
                         <img src={womens} className="ts-card-img-top" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="ts-card-title">Women's Cloths</h5>
-                            {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                        <div className="card-body">
+                            <h5 className="ts-card-title">Women's Cloths</h5>
                         </div>
                     </div>
 
-                    <div class="testimonial-card">
+                    <div className="testimonial-card">
                         <img src={kids} className="ts-card-img-top" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="ts-card-title">Kid's Cloths</h5>
-                            {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                        <div className="card-body">
+                            <h5 className="ts-card-title">Kid's Cloths</h5>
                         </div>
                     </div>
 
-                    <div class="testimonial-card">
+                    <div className="testimonial-card">
                         <img src={jw} className="ts-card-img-top" alt="Card image cap" />
-                        <div class="card-body">
-                            <h5 class="ts-card-title">Jewellary</h5>
-                            {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+                        <div className="card-body">
+                            <h5 className="ts-card-title">Jewellary</h5>
                         </div>
                     </div>
                 </div>

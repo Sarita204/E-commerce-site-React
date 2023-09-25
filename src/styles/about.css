@@ -1,16 +1,20 @@
-.about-para{
+h1 {
+    padding: 30px;
+}
+
+.about-para {
     color: #000000;
     padding: 0 80px;
     font-size: 16px;
     line-height: 26px;
 }
 
-.footer{
-    padding: 50px 0 10px 0 ;
+.footer {
+    padding: 50px 0 10px 0;
 }
 
 @media screen and (max-width: 550px) {
-    .about-para{
+    .about-para {
         padding: 0 40px;
     }
 }

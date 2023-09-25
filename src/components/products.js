@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/home.css";
+import git from "../images/github-logo.png"
 import img1 from "../images/img1.png";
 import m1 from "../images/m1.png";
 import k1 from "../images/k1.jpg"
@@ -15,15 +16,21 @@ import m4 from "../images/m4.jpg"
 import img4 from "../images/img4.jpg"
 import m5 from "../images/m5.jpg"
 import j3 from "../images/j3.jpg"
+
 function Products() {
+    const [counter, setCounter] = React.useState(0);
+
+    function Increase() {
+        setCounter(counter + 1); // setCounter(0 + 1);
+      }
 
     return (
         <div className="products-container" id="products">
-            <h1>Latest products</h1>
+            <h1>Latest Products</h1>
             <hr></hr>
 
             <div className="filtering_buttons">
-                <a href="/products" className="f-title" aria-selected style={{background:"blue", color:"white"}}>All</a>
+                <a href="/products" className="f-title" aria-selected style={{ background: "blue", color: "white" }}>All</a>
                 <a href="/mens" className="f-title">Men's Cloths</a>
                 <a href="/womens" className="f-title">Women's Cloths </a>
                 <a href="/kids" className="f-title">Kid's Cloths</a>
@@ -40,8 +47,12 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        {counter}
+
+                        <button onClick={Increase}>add to cart</button>
+
+                        {/* <a href="#" className="card-link" >Add to Cart</a> */}
                     </div>
                 </div>
 
@@ -53,8 +64,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -66,8 +77,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -82,8 +93,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -95,8 +106,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -108,8 +119,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -124,8 +135,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -137,8 +148,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -150,8 +161,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -166,8 +177,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -179,8 +190,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -192,8 +203,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -208,8 +219,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -221,8 +232,8 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
 
@@ -234,10 +245,16 @@ function Products() {
                     </div>
 
                     <div className="card-body">
-                        <a href="#" class="card-link">Buy Now</a>
-                        <a href="#" class="card-link">Add to Cart</a>
+                        <a href="#" className="card-link">Buy Now</a>
+                        <a href="#" className="card-link">Add to Cart</a>
                     </div>
                 </div>
+            </div>
+            <div className="footer">
+                <div>Made with ❤️ by <a>Sarita</a></div>
+                <a href="https://github.com/Sarita204/E-commerce-site-React">
+                    <img src={git} className="social-logo" />
+                </a>
             </div>
         </div>
     );

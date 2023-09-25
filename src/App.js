@@ -11,6 +11,7 @@ import Womens from './components/womens';
 import Mens from './components/mens';
 import Kids from './components/kids';
 import Jewellary from './components/jewellary';
+import Cart from "./components/cart"
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
    
       <Router>
         <Navbar />
+        <Route path="/cart" component={Cart} />
+
         <Switch>
 
           <Route

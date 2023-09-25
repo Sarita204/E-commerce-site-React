@@ -1,37 +1,3 @@
-// import React from "react";
-// import "../styles/navbar.css";
-// import cart from "../images/cart.png"
-
-// function Navbar() {
-//     return (
-//         <hrader>
-//             <nav className="navbar">
-//                 <div className="navbar_container">
-//                     <div className="logo">
-//                         <a href="/">React Ecommerce</a>
-//                     </div>
-//                 </div>
-//                 <div className="nav_item">
-//                     <div className="nav_links">
-//                         <a href="/">Home</a>
-//                         <a href="/">About</a>
-//                         <a href="/">Products</a>
-//                         <a href="/">Contact</a>
-//                         <a href="/">Sign In</a>
-//                     </div>
-//                 </div>
-//                 <button className="signin_button">
-//                     <img src={cart} className="cart_icon" />
-//                 </button>
-//             </nav>
-//         </hrader>
-//     );
-// }
-
-// export default Navbar;
-
-
-
 import React from "react";
 import "../styles/navbar.css";
 import { useState } from "react";
@@ -85,9 +51,11 @@ function Navbar() {
                 </div>
                 
                 <div className="left-icons-container">
+                    <a href="/cart">
                     <div className="icon-container">
                     <img src={cart} alt="logo" className="cart-logo"/>
                     </div>
+                    </a>
                 <div className="nav-icon" onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
