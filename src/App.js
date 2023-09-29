@@ -12,6 +12,7 @@ import Mens from './components/mens';
 import Kids from './components/kids';
 import Jewellary from './components/jewellary';
 import Cart from "./components/cart"
+import Login from './components/login';
 
 function App() {
   return (
@@ -45,11 +46,6 @@ function App() {
           <Route path="/kids" component={Kids} />
           <Route path="/jewellary" component={Jewellary} />
 
-
-          
-
-
-
           <Route
             exact path="/"
             component={Contact} />
@@ -59,7 +55,9 @@ function App() {
           <Route
             exact path="/"
             component={Signin} />
+            
           <Route path="/signin" component={Signin} />
+          <Route path="/login" component={Login} />
 
         </Switch>
       </Router>

@@ -11,7 +11,7 @@ function Navbar() {
 
     return (
         <div>
-            <header className="navbar-container">
+            <header className="navbar-container" >
                         <a href="/" className="logo">
                             <img src={logo} alt="logo" className="cart-logo" />
                         </a>

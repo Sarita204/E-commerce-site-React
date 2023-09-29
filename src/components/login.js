@@ -1,42 +1,8 @@
-// import React, { useState } from "react";
-// import "../styles/contact.css"
+import React, { useEffect, useState } from "react";
+import "../styles/login.css"
+import "react-phone-number-input/style.css";
 
-// function Contact(){
-//     const [data, setData] =useState ({name: "", email:"", phone:"", message:""});
-//     const handleChange = (e) => {
-//         const name = e.target.name;
-//         const value = e.target.value;
-//         setData ({...data, [name]: value})
-
-//     }
-
-//     const handleSubmit = (e) => {
-//         e.preventDefault ()
-// alert ("Thanks for Contacting..!")
-//     }
-//     return(
-//         <div className="about-container" style={{border:"2px solid red"}}>
-//             <form method="post" onSubmit={handleSubmit}>
-//                 <div className="title">Contact Us</div>
-//                 <input type="text" name="name" id="name" onChange={handleChange} value={data.name} placeholder="Enter Your Name" />
-//                 <input type="email" name="email" id="email" onChange={handleChange}value={data.email} placeholder="Enter Your Email" />
-//                 <input type="phone" name="phone" id="phone"  onChange={handleChange} value={data.phone} placeholder="+91 " />
-//                 <textarea name="message" id ="" cels="30" rows="3" onChange={handleChange} value={data.message} placeholder="Enter Your Message"/>
-//                 <button type="submit" >Send</button>
-//             </form>
-//         </div>
-//     );
-// }
-
-// export default Contact;
-
-
-
-import React, {useState, useEffect}from 'react';
-import "../styles/signin.css";
-import PhoneInput from "react-phone-number-input";
-
-function ContactUs(){
+function Login() {
   const [phone, setPhone] = useState("");
   const [showNameError, setShowNameError] = useState(false);
   const [showPhoneError, setShowPhoneError] = useState(false);
@@ -46,6 +12,7 @@ function ContactUs(){
   const [message, setMessage] = useState("");
   const [contactInfo, setContactInfo] = useState({});
  
+  
   useEffect(() => {
     loadContactInfo((result) => {
         try {
@@ -56,40 +23,14 @@ function ContactUs(){
       });
   }, []);
 
-	
-	return(
-		<div>
-			<div className="contact-info-container" id="contact">
+  return (
+    <div className="contact-info-container" id="contact">
       <div className="contact-info-body" >
         <div className="contact-info-form-container" >
           <div className="contact-info-header" style={{color:"#090909"}}>
-           Contact Us
+            Login Here
           </div>
           <div className="contact-info-form-section">
-            <div className="contact-info-form-input-container" >
-              <div>
-                <input
-                  className="contact-info-form-input"
-                  value={name}
-                  placeholder="Enter Your Name"
-                  onChange={(e) => setName(e.target.value)}
-                />
-                {showNameError && <div style={{ color: "red" }}>Name is required!</div>}
-              </div>
-            </div>
-            <div className="contact-info-form-input-container">
-              <div>
-                <PhoneInput
-                  value={phone}
-                  placeholder="Enter Phone number"
-                  className="contact-info-form-input"
-                  defaultCountry="IN"
-                  onChange={setPhone}
-                />
-              </div>
-              {showPhoneError && <div style={{ color: "red" }}>Phone no is required!</div>}
-            </div>
-
             <div className="contact-info-form-input-container">
               <div>
                 <input
@@ -100,17 +41,17 @@ function ContactUs(){
                 />
               </div>
               {showEmailError && <div style={{ color: "red" }}>Email is required!</div>}
-
             </div>
-            <div className="contact-info-form-input-container">
+
+            <div className="contact-info-form-input-container" >
               <div>
-                <textarea
-                  style={{ height: 100 }}
-                  placeholder="message"
+                <input
                   className="contact-info-form-input"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  value={name}
+                  placeholder="Enter Your Password"
+                  onChange={(e) => setName(e.target.value)}
                 />
+                {showNameError && <div style={{ color: "red" }}>Password is required!</div>}
               </div>
             </div>
           </div>
@@ -136,37 +77,30 @@ function ContactUs(){
                 } else setShowEmailError(false)
                 console.log(phone.length, !(phone.length === 13));
 
-                if (!(phone.length === 13)) {
-                  return;
-                }
-
                 if (!validateEmail(email)) {
-                  alert("Invalid Email");
                   return;
                 }
                 if (!hasError)
                 sendMessage(phone, email, message, name, () => {
                     console.log("sent");
                   });
-                window.alert("Thanks for Contacting..!");
+                window.alert("Login Successful");
                 setEmail("");
                 setPhone("");
                 setName("");
                 setMessage("");
               }}
-              
             >
-              <a>Send</a>
+              <a>Login</a>   
             </button>
           </div>
         </div>
       </div>
-	  </div>
-	  </div>
-	);
+    </div>
+  );
 }
 
-export default ContactUs;    
+export default Login;
 
 function loadContactInfo(cb) {
     var myHeaders = new Headers();
