@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/navbar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import cart from "../images/shopping-cart.png";
 import logo from "../images/logo.png";
 
@@ -11,6 +11,7 @@ function Navbar() {
 
     return (
         <div>
+
             <header className="navbar-container" >
                         <a href="/" className="logo">
                             <img src={logo} alt="logo" className="cart-logo" />
@@ -83,12 +84,12 @@ function Navbar() {
                         isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
                     }
                 >
-                    <ul>
+                    <ul style={{cursor:"pointer"}}>
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="/projects">Products</a></li>  
-                        <li><a href="/projects">Contact</a></li>                   
-                 
+                        <li><a href="/products">Products</a></li>  
+                        <li><a href="/contact">Contact</a></li> 
+                        <li><a href="/signin">Signin</a></li>                   
                 </ul>
 </div>
                 </div>

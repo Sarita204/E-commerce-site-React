@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "../styles/home.css";
 import git from "../images/github-logo.png"
 import img1 from "../images/img1.png";
@@ -16,12 +16,16 @@ import m4 from "../images/m4.jpg"
 import img4 from "../images/img4.jpg"
 import m5 from "../images/m5.jpg"
 import j3 from "../images/j3.jpg"
+import React, {useState} from "react";
 
-function Products() {
+
+function Products(props) {
     const [counter, setCounter] = React.useState(0);
+    const [sizes, setSizes] = useState([])
+
 
     function Increase() {
-        setCounter(counter + 1); // setCounter(0 + 1);
+        setCounter(counter + 1); 
       }
 
     return (
@@ -48,11 +52,7 @@ function Products() {
 
                     <div className="card-body">
                         <a href="#" className="card-link">Buy Now</a>
-                        {counter}
-
-                        <button onClick={Increase}>add to cart</button>
-
-                        {/* <a href="#" className="card-link" >Add to Cart</a> */}
+                        <a href="#" className="card-link" >Add to Cart</a>
                     </div>
                 </div>
 
@@ -257,6 +257,7 @@ function Products() {
                 </a>
             </div>
         </div>
+    
     );
 }
 

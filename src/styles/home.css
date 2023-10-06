@@ -13,8 +13,8 @@
 
 h2 {
     position: absolute;
-    top: 35%;
-    left: 5%;
+    top: 35% !important;
+    left: 2% !important;
     font-size: 40px !important;
     font-weight: bold !important;
     color: white !important;
@@ -23,7 +23,7 @@ h2 {
 .bg_subtitle {
     position: absolute;
     top: 45%;
-    left: 5%;
+    left: 2%;
     line-height: 40px;
     color: white;
     font-size: 28px;
@@ -152,4 +152,18 @@ h2 {
     .card {
         width: auto;
     }
+.bg_subtitle{
+    position: absolute;
+    top: 50%;
+    left: 2% !important;
+    line-height: 30px;
+    font-size: 24px;
+}
+.filtering_buttons{
+    gap: 10px;
+}
+.f-title{
+    padding: 5px;
+    font-size: 12px;
+}
 }

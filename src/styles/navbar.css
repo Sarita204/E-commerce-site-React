@@ -152,4 +152,7 @@
       list-style: none;
       padding: 20px;
     }
+    .left-icons-container{
+      margin: 10px 40px !important;
+    }
   }
